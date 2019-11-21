@@ -1,19 +1,24 @@
-# An Attentive Multi-Level Recurrent Network for Salient Object Detection on Light Field
+# AMR-for-light-field-saliency
+This is the code for the paper "An Attentive Multi-Level Recurrent Network for Salient Object Detection on Light Field".
 
 ## Overview of the framework
 ![Image text](pic/framework.jpg)
+## Install
+Install `pytorch` for training and testing.
 
 ## Pre-train
-Use `RGBdata` in [dataset.py](dataset.py) to load RGB saliency dataset for pre-training.
+- Prepare the RGB saliency dataset and its data list.
+- Use `RGBdata` in [dataset.py](dataset.py) to load RGB saliency dataset for pre-training.
 
 ## Fine-tune
-Use `LFdata` in [dataset.py](dataset.py) to load light field saliency dataset for pre-training.
+- Split the light field saliency dataset to several folds for cross-validation and prepare its corresponding data list. 
+- Use `LFdata` in [dataset.py](dataset.py) to load light field saliency dataset for pre-training.
 
 ## Models
-The fine-turned models are in [parameters](parameters/).
+The fine-turned models of five folods are saved in [parameters](parameters/).
 
 ## Test
-Run `python test.py` to test. 
+Run `python test.py` to test. The saliency results of `LF-640` and `LFSD` datasets are in [Results](Results/)
 
 ## Results
 ![Image text](pic/results.jpg)
