@@ -1,5 +1,4 @@
-# AMR-for-light-field-saliency
-This is the code for the paper "An Attentive Multi-Level Recurrent Network for Salient Object Detection on Light Field".
+# AMR-network
 
 ## Overview of the framework
 ![Image text](pic/framework.jpg)
