@@ -1,7 +1,5 @@
 # AMR-network
 
-## Overview of the framework
-![Image text](pic/framework.jpg)
 ## Install
 Install `pytorch` for training and testing.
 
